@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width-device-width, initial-scale-1">
 
+//I designed this page as simply as I could and I was unable to get the SUS calculator to work properly. I followed the exercises in the chapter but I was still unable to get it to work. I looked to https://www.w3schools.com for help with nearly every element of this project as well as the Boostrap website.//
+
 <title>Usability Test</title>
 
 <style>
@@ -13,15 +15,14 @@ body{
     
 }
 
-col{
-
+input{
+	display:block;
 }
- row{
 
- }
 
  img{
- 	width:100%;
+ 	width:300px;
+ 	height:150px;
  	vertical-align:middle;
  }
 
@@ -35,22 +36,150 @@ col{
 
 	<div class="col-8 justify-content-center">
 		<h1>Temu Usability Report</h1>
+		<hr>
 	</div>
-<div section-class="mb-5">
-	 <div class="row my-6">
-	 	<h3>Task 1:Add a piece of women's clothing with plus-sized options from your Local Warehouse.</h3>
-	 	<img src="../images/temu-clothes.png" class=img.fluid alt="Screenshot of plus-sized women's clothes on Temu">
+	 <div class="row my-2">
+	 	<h2>Task 1:Add a piece of women's clothing with plus-sized options from your Local Warehouse.</h2>
+	 	<h4>The subject went immediately to the local warehouse for the area and searched for women’s underwear first due to a miscommunication, then corrected to general clothing and found an item that fit the description given very quickly.</h4>
+	 	<h3>Completed in 1 minute 30 seconds</h3>
 
+	 	<img src="../assets/temu-clothes.png" class=img.fluid alt="Screenshot of plus-sized women's clothes on Temu">
+	 	<hr>
 
+<div class="row my-2">
+	<h2>Task 2: You're really hungry, and you have 90$ in your bank account, and you need a microwave. Find a microwave that's both within your budget (including shipping + tax) and rated 5-stars so you don't blow your house up.</h2>
+	<h4>The subject used search bar to find the microwave selection, though it took a bit to find an item that fit all of the description. The subject mostly browsed what came up on first search.</h4>
+	<h3>Completed in 2 minutes 40 seconds</h3>
+	<img src="../assets/temu-microwave.png" class=img.fluid alt="Screenshot of a microwave that fits the price and rating requirements">
+	<hr>
+
+	<div class="row my-2">
+		<h2>Task 3:You bought an item and it hasn't arrived. Contact the support Chatbot about this issue.</h2>
+		<h4>The subject did not go to the chatbot at first, they went to the items tab instead and then they eventually went to the chatbot and typed “I have not received my microwave this morning” into it. They got answers that were helpful,thouhg unspecific to their question.</h4>
+		<h3>Completed in 2 minutes 0 seconds</h3>
+		<img src="../assets/temu-support.png" class=img.fluid alt="Screenshot of results after asking chatbot for support">
+		<hr>
+
+		<div class="row my-2">
+			<h2>Task 4:Find a way to return an item.</h2>
+			<h4>The subject found where to return an item very quickly, as they were already in the support area and there was a tab for returning items along the left side of the support page.</h4>
+			<h3>Completed in 2 minutes 1 second</h3>
+			<img src="../assets/temu-return.png" class=img.fluid alt="Screenshot of the temu support section to return an item">
+          <hr>
+
+          <div class="row my-2">
+          	<h2>Task 5:You're the same person who had the microwave issue, and you're in search of a job for obvious reasons. You want to apply for Temu's team--find a way to do this</h2>
+          	<h4>The subject scanned the support area they were already in and then went back to the homepage, where they seemed unsure where to go for a bit. They found the “careers” button at bottom of page and were promptly taken to LinkedIn.</h4>
+          	<h3>Completed in 0 minutes 59 seconds</h3>
+          	<img src="../assets/temu-careers.png" class=img.fluid alt="Screenshot of careers page on Temu.">
+          	<hr>
+
+		</div>
+	</div>
 </div>
+</div>
+</div>
+</div>
+
 <div class="container text center">
 	
  	<script src="../assets/hello.js"></script>
 
-<form action="#" id="my form">
-	<input type="text" id="msg" />	
-	<button type="submit">Submit</button>
+ 	<h2 class="sky-border-bottom">SUS Score Calculator</h2>
 
+ 	<div class="my-2 mb-4">
+ 	<small>On a scale of 1-5 where 1 is strongly disagree and 5 is strongly agree. Note: the following fields have been pre-filled with the values found from the SUS test performed on the above data.</small>
+ 	</div>
+
+<form action="#" id="myform">
+	 <div class="my-2 row">
+     <div class="col-2">
+	<input type="number" class="form-control" value="3" id="q1" min="1" max="5" required>
+</div>
+<div class="col-10">
+                            <label for="q1" class="form-label">I think that I would like to use this system
+                                frequently.</label>
+                        </div>
+                    </div>
+      <div class="my-2 row">
+      <div class="col-2">
+	<input type="number" class="form-control" value="2" id="q2" min="1" max="5" required>
+</div>
+<div class="col-10">
+                            <label for="q1" class="form-label">I found the system unnecessarily complex.</label>
+                        </div>
+                    </div>
+      <div class="my-2 row">
+      <div class="col-2">
+	<input type="number" class="form-control" value="4" id="q3" min="1" max="5" required>
+</div>
+<div class="col-10">
+                            <label for="q1" class="form-label">I thought the system was easy to use.</label>
+                        </div>
+                    </div>
+      <div class="my-2 row">
+      <div class="col-2">
+    <input type="number" class="form-control" value="1" id="q4" min="1" max="5" required>
+</div>
+<div class="col-10">
+                            <label for="q1" class="form-label">I think that I would need the support of a technical person to be able to use this system.</label>
+                        </div>
+                    </div>
+      <div class="my-2 row">
+      <div class="col-2">
+    <input type="number" class="form-control" value="4" id="q5" min="1" max="5" required>
+</div>
+<div class="col-10">
+                            <label for="q1" class="form-label">I found the various functions in this system were well integrated.</label>
+                        </div>
+                    </div>
+      <div class="my-2 row">
+      <div class="col-2">
+    <input type="number" class="form-control" value="2" id="q6" min="1" max="5" required>
+</div>
+<div class="col-10">
+                            <label for="q1" class="form-label">I thought there was too much inconsistency in this system.</label>
+                        </div>
+                    </div>
+     <div class="my-2 row">
+     <div class="col-2">
+    <input type="number" class="form-control" value="4" id="q7" min="1" max="5" required>
+</div>
+<div class="col-10">
+                            <label for="q1" class="form-label">I would imagine that most people would learn to use this system very quickly.</label>
+                        </div>
+                    </div>
+     <div class="my-2 row">
+     <div class="col-2">
+    <input type="number" class="form-control" value="1" id="q8" min="1" max="5" required>
+</div>
+<div class="col-10">
+                            <label for="q1" class="form-label">I found the system very cumbersome to use.</label>
+                        </div>
+                    </div>
+     <div class="my-2 row">
+     <div class="col-2">
+    <input type="number" class="form-control" value="4" id="q9" min="1" max="5" required>
+</div>
+<div class="col-10">
+                            <label for="q1" class="form-label">I felt very confident using this system.</label>
+                        </div>
+                    </div>
+     <div class="my-2 row">
+     <div class="col-2">
+    <input type="number" class="form-control" value="2" id="q10" min="1" max="5" required>
+</div>
+<div class="col-10">
+                            <label for="q1" class="form-label">I needed to learn a lot of things before I could get going with this system.</label>
+                        </div>
+                    </div>
+
+		<button type="submit" class="btn btn-custom">Submit</button>
+		<input type="number" step="any" class="form-control" id="answer">
+
+
+</form>
+</div>
 </body>
 </html>
 
