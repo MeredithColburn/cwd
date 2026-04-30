@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 	<!--
 	About this page: The idea I wanted to make was the basic shaped of an amazon truck against a basic background of a sky and the ground with the amazon logo and the slogan on the truck's side. The hover element would reveal a picture of an amazon logo that had a burning forest in the word "amazon" with angry eyebrows above the two letter "a"s that kind of look like eyes with a green tongue with a dollar sign on it sticking out of the mouth. I got very lost while trying to create this visiona nd I am entirely unsure why I was unable to get it to work. 
@@ -10,34 +12,77 @@
 	
 	<style>
    body{
-     background-color: lightblue;
-            font-family:candara;
-            <div>{
-            	
+   	    background-color:#9cd2fcff;
+       font-family:candara;
+            }
+ col{
+ 	display:flex;
+ 	justify-content:center;
+
+ }
+
+ img{
+ 	align-items:center;
+ 	width:300;
+ 	height:150;
+ }
+ overlaysquare{
+ 	width:300px;
+ 	height:150px;
+ }
+.center{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.right{
+	display:flex;
+	justify-content:right;
+	align-items:right;
+}
+
+            :root{
+            	--black: #000000ff;
+--dim-grey: #6a706eff;
+--sky-blue: #9cd2fcff;
+--lime-moss: #90bf22ff;
+--white: #ffffffff;
             }
 
-   
+   .square{
+   	    align-items:center;
+   	    width:400px;
+   	    height:200px;
+   	    background-color:#ffffffff;
+   }
 
-    #evrything{
+   .circle{
+
+   	    float:right;
+   	   height:50px;
+   	   width:50px;
+   	   background-color:000000ff;
+   	   border-radius:50%;
+   }
+
+    #truck{
+    	position:absolute;
        width:300px;
        height:300px;
-       background-color:#4b6798; 
-       margin: 500px; 
-
-          
-           background-image:"url(images/amazonlogowhite.png)";
+       background-image:url(../assets/amazonlogowhite.png);
+       background-repeat:no-repeat;
+       margin:100px;
        }
 
 h1{
 	text-align:center;
 }
 
-    }
 
-
-    #everything:hover{
+    #truck:hover{
 	background-color:#4b6798
-	image:url(/images/amazong7.webp);
+	image:url(../assets/amazon6.png);
 	cursor:wait;
     }
 
@@ -45,9 +90,26 @@ h1{
 
 </head>
 <body>
- 
- <div id= "everything"> </div>
+
+
 
 	<h1>There's a lot more to Prime. A truckload more.</h1>
+        
+    	<div class="square">
+		<div id= "truck"></div>
+</div>
+</div>
+       <script type="text/javascript">
+       	let targetElement= document.querySelector("#everything");
+       	target.Element.addEventListener("mouseover",function)({
+       		this.style.backgroundImage="url(../assets/amazon6.png)"
+       	}) target.Element.addEventListener("mouseout",function)()
+{
+	this.style.backgroundImage="url(../assets/amazonlogowhite.png)"
+}	
+		<script src="https://cnd.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+		const img = document.getElementById("img")	
+
+		</script>
 </body>
 </html>
